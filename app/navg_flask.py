@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route('/user/<name>')
-def navg_flask():
+def navg_flask(name):
     return '<h1> hello %s welcome to navg<h1>' %name
 
 
