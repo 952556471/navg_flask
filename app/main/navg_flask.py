@@ -4,6 +4,9 @@ from flask import Flask,request,render_template
 from . import main
 # app = Flask(__name__)
 
+@main.route('/')
+def navg_index():
+    return render_template('index.html')
 
 @main.route('/user/<name>')
 def navg_flask(name):

@@ -1,0 +1,44 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title%} xianhuabing{% endblock%}
+
+{% block head %}
+{{ super()}}
+<link rel="shortcut icon" href="{{url_for('static',filename='pic_source/favicon.ico')}}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static',filename='pic_source/favicon.ico')}}" type="image/x-icon">
+{% endblock %}
+
+{%  block body%}
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <a href="/"><img alt="xianhuabing-log" src="static/pic_source/xianhuabinglogo.jpg" width="320" height="80"> </a>
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a href="#"> 首页 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 关于华炳 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 新闻中心 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 业务领域 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 可持续发展 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 文化之窗 </a>
+                </li>
+                <li class="active">
+                    <a href="#"> 投资者关系 </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+{% endblock%}
